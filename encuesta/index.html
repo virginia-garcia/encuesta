@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Encuesta</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/pantalla.svg" alt="">
+        </div>
+    </div>
+    <div class="form">
+        <form action="#">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Encuesta sobre Celulares</h1>
+                        
+                </div>
+                    
+            </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre Completo</label>
+                        <input  id="firstname"type="text" name="firstname" placeholder="Nombre Completo" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Correo</label>
+                        <input  id="email"type="text" name="email" placeholder="Correo" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="telefono">Celular</label>
+                        <input  id="telefono"type="text" name="telefono" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                </div>
+                <div class="genero-group">
+                    <div class="genero-title">
+                        <h4>Género</h4>
+                    </div>
+                    <div class="genero-input">
+                        <input type="radio" id="femenino" name="genero">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div class="genero-input">
+                        <input type="radio" id="masculino" name="genero">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="genero-input">
+                        <input type="radio" id="otro" name="genero">
+                        <label for="otro">Otro</label>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="fecha">
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date">
+                </div>
+                <br>
+                <div class="preguntas-box">
+                    <!--Pregunta 1-->
+                    <div class="preguntas">
+                        <p>¿Qué marca de telefono celular utilizas?</p>
+                    </div>
+                    
+                    <div class="pregunta-input">
+                        <input type="radio" id="nokia" name="marca">
+                        <label for="nokia">Nokia</label>
+                        <input type="radio" id="samsung" name="marca">
+                        <label for="samsung">Samsung</label>
+                        <input type="radio" id="motorola" name="marca">
+                        <label for="motorola">Motorola</label>
+                        <input type="radio" id="otra" name="marca">
+                        <label for="otra">Otra</label>
+                    </div>
+                    <br>
+                    <!--Pregunta 2-->
+                    <div class="preguntas">
+                        <p>¿Cómo consideras la calidad de sonido de tu celular?</p>
+                    </div>
+                    
+                        <div class="pregunta-input">
+                        <input type="radio" id="calidad" name="calidad">
+                        <label for="calidad">Buena</label>
+                    </div>
+                    <div class="pregunta-input">
+                        <input type="radio" id="calidad" name="calidad">
+                        <label for="calidad">Mala</label>
+                    </div>
+                    <div class="pregunta-input">
+                        <input type="radio" id="marca" name="marca">
+                        <label for="marca">Regular</label>
+                    </div>
+                    
+                   
+                    
+                    <br>
+                    <!--Pregunta 3-->
+                    <div class="pregunta">
+                        <p>¿Cuántas horas dura la batería de tu celular?</p>
+                    </div>
+                    <div class="input-box">
+                       
+                        <input  id="horas"type="text" name="horas" placeholder="Hs" required>
+                    <!--Pregunta 4 -->
+                    <p>¿Qué tan Feliz estas con tu celular?</p>
+                    <div class="starts">
+                        <ul id="pingStar">
+                         <li rel = "1" title = "1  "> ★ </li>
+                                    <li rel = "2" title = "2  "> ★ </li>
+                                    <li rel = "3" title = "3  "> ★ </li>
+                                    <li rel = "4" title = "4  "> ★ </li>
+                                    <li rel = "5" title = "5  "> ★ </li>
+                         <span id="dir"></span>
+                        </ul>
+                        <input type="hidden" value="" id="startP">
+                       </div>
+                    
+                </div>
+            </form>
+            <button type="button">Enviar</button>
+        </div>
+    
+    </div>
+
+</body>
+</html>
